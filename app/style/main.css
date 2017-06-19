@@ -1,0 +1,55 @@
+body {
+  font-size: 13px; }
+  @media only screen and (min-width: 768px) {
+    body {
+      background-color: #000;
+      font-size: 16px; } }
+
+.container {
+  height: 100%; }
+  .container .objects-container {
+    display: block;
+    clear: both; }
+    .container .objects-container .object {
+      width: 50px;
+      height: 50px;
+      background: yellow;
+      display: inline-block;
+      text-align: center;
+      line-height: 50px;
+      margin-left: 10px;
+      margin-top: 10px; }
+      .container .objects-container .object#red {
+        background-color: red; }
+      .container .objects-container .object#green {
+        background-color: green; }
+      .container .objects-container .object#blue {
+        background-color: blue; }
+      .container .objects-container .object#orange {
+        background-color: orange; }
+      .container .objects-container .object#yellow {
+        background-color: yellow; }
+      @media only screen and (min-width: 768px) {
+        .container .objects-container .object {
+          width: 100px;
+          height: 100px;
+          line-height: 100px;
+          margin-left: 15px;
+          margin-top: 15px; } }
+      @media only screen and (min-width: 1224px) {
+        .container .objects-container .object {
+          width: 200px;
+          height: 200px;
+          line-height: 200px;
+          margin-left: 20px;
+          margin-top: 20px; } }
+  .container:hover .object {
+    opacity: 0.5; }
+    .container:hover .object:hover {
+      opacity: 1; }
+
+#circles .object {
+  border-radius: 50%; }
+
+#squares .object {
+  visibility: hidden; }

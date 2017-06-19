@@ -1,0 +1,60 @@
+body{
+  font-size: 13px;
+  @media only screen and (min-width:768px){
+    background-color: #000;
+    font-size: 16px;
+  }
+}
+.container{
+  height: 100%;;
+  .objects-container{
+    display: block;
+    clear: both;
+    .object{
+      width: 50px;
+      height: 50px;
+      background: yellow;
+      display: inline-block;
+      text-align: center;
+      line-height: 50px;
+      margin-left: 10px;
+      margin-top: 10px;
+      &#red{background-color: red;}
+      &#green{background-color: green;}
+      &#blue{background-color: blue;}
+      &#orange{background-color: orange;}
+      &#yellow{background-color: yellow;}
+      @media only screen and (min-width:768px){
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        margin-left: 15px;
+        margin-top: 15px;
+      }
+      @media only screen and (min-width:1224px){
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+    }
+  }
+  &:hover .object{
+    opacity: 0.5;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+
+#circles{
+  .object{
+    border-radius: 50%;
+  }
+}
+#squares{
+  .object{
+    visibility: hidden;
+  }
+}
